@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<software>
+    <metadata>
+        <name>OpenContent Media Player</name>
+        <info_url>http://www.opencontent.it</info_url>
+    </metadata>
+
+    <dependencies>
+        <extends>
+            <extension name="ezjscore" />
+            <extension name="ezwebin" />
+        </extends>
+    </dependencies>
+</software>
