@@ -1,4 +1,4 @@
-.audio div.controls {
+div.controls {
 	position:relative;
 	height:110px;	
 	/* black background with a gradient */
@@ -8,7 +8,7 @@
 }
 
 /* play/pause button */
-.audio div.controls  a.play, .audio div.controls  a.pause { 
+div.controls  a.play, div.controls  a.pause { 
 	position:absolute;
 	width: 37px;
 	height: 43px;
@@ -21,21 +21,21 @@
 	z-index:10000;
 }
 
-.audio div.controls  a.play:hover {
+div.controls  a.play:hover {
 	background-position:-37px -110px;	
 }
 
 /* pause state */
-.audio div.controls  a.pause { 
+div.controls  a.pause { 
 	background-position:-74px -110px;
 }
 
-.audio div.controls  a.pause:hover {
+div.controls  a.pause:hover {
 	background-position:-111px -110px;	
 }
 
 /* the timeline (or "scrubber")  */
-.audio div.controls  div.track {  
+div.controls  div.track {  
 	left:121px;
 	position:absolute;
 	cursor:pointer;
@@ -45,7 +45,7 @@
 }
 
 /* the draggable playhead */
-.audio div.controls  div.playhead {
+div.controls  div.playhead {
 	position:absolute;
 	cursor:pointer; 
 	background-color:#333;
@@ -57,7 +57,7 @@
 }
 
 /* buffer- and progress bars. upon runtime the width of these elements grows */
-.audio div.controls  div.progress, .audio div.controls  div.buffer {	
+div.controls  div.progress, div.controls  div.buffer {	
 	position:absolute;
 	background-color:#333;
 	filter: alpha(opacity=50);
@@ -66,14 +66,14 @@
 	height:40px;
 }
 
-.audio div.controls  div.buffer {
+div.controls  div.buffer {
 	background-color:#fff;
 	opacity:0.3;
 	filter: alpha(opacity=30);
 }
 
 /* time display */
-.audio div.controls  div.time {
+div.controls  div.time {
 	font-size:12px;
 	left:165px;
 	padding:0;
@@ -84,12 +84,12 @@
 }
 
 /* total duration in time display */
-.audio div.controls  div.time strong {
+div.controls  div.time strong {
 	color:#666;
 }
 
 /* mute / unmute buttons */
-.audio div.controls  a.mute, .audio div.controls  a.unmute {
+div.controls  a.mute, div.controls  a.unmute {
 	background:url("../images/controls/audio/player.png") no-repeat 0 -153px;
 	cursor:pointer;
 	height:19px;
@@ -102,16 +102,16 @@
 	width:24px;
 }
 
-.audio div.controls  a.mute:hover {
+div.controls  a.mute:hover {
 	background-position:-24px -153px;	
 }
 
 /* unmute state */
-.audio div.controls  a.unmute {
+div.controls  a.unmute {
 	background-position:-48px -153px;	
 }
 
-.audio div.controls  a.unmute:hover {
+div.controls  a.unmute:hover {
 	background-position:-72px -153px;	
 }
 

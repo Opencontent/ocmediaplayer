@@ -1,7 +1,7 @@
 
 /* root element should be positioned relatively so that
     child elements can be positioned absolutely */
-.audio .controls {
+.controls {
     position:relative;
     height:8px;
     margin:12px 0 0;
@@ -10,7 +10,7 @@
 
 /* when play button toggles between play/pause class
     we move its background image */
-.audio .controls .play, .audio .controls .pause {
+.controls .play, .controls .pause {
     position:absolute;
     width: 18px;
     height:10px;
@@ -21,12 +21,12 @@
     margin-top: -10px;
 }
 
-.audio .controls .pause {
+.controls .pause {
     background-position:center -10px;
 }
 
 /* the track or "scrubber"  */
-.audio .controls .track {
+.controls .track {
     position:absolute;
     top:-6px;
     height:18px;
@@ -38,7 +38,7 @@
 }
 
 /* the draggable playhead */
-.audio .controls .playhead {
+.controls .playhead {
     position:absolute;
     height:12px;
     background:url(../images/controls/apple/playhead.png) no-repeat;
@@ -48,7 +48,7 @@
 }
 
 /* buffer and controls are automatically resized, their initial width should be 0 */
-.audio .controls .progress, .audio .controls .buffer {
+.controls .progress, .controls .buffer {
     background-color:#fff;
     height:6px;
     margin:3px 4px;
@@ -61,18 +61,18 @@
     max-width:634px;
 }
 
-.audio .controls .buffer {
+.controls .buffer {
     background-color:#999;
 }
 
 /* som proprietary styling for progress bar under mozilla */
-.audio .controls .progress {
+.controls .progress {
     -moz-border-radius-bottomleft:2px;
     -moz-border-radius-topleft:2px;
 }
 
 /* hide time & mute */
-.audio .controls .time, .audio .controls .mute, .audio .controls .unmute {
+.controls .time, .controls .mute, .controls .unmute {
     display:none;
 }
 
