@@ -32,19 +32,22 @@ class OCMPOperator
 		{
 			case 'ocmp':
                 $function = $namedParameters['fileType'];
-                $value = OCMediaPlayerHelper::$function( $namedParameters['fileIdentifier'] );
-                
-                $dash = $namedParameters['dash'];
-                
-                if ( !$dash && $function == 'flash' )
+                if ( method_exists( 'OCMediaPlayerHelper', $function ) )
                 {
-                    $dash = true;
+                    $value = OCMediaPlayerHelper::$function( $namedParameters['fileIdentifier'] );
+                    
+                    $dash = $namedParameters['dash'];
+                    
+                    if ( !$dash && $function == 'flash' )
+                    {
+                        $dash = true;
+                    }
+                    
+                    if ( $dash )
+                        return $operatorValue = '"' . $value . '"';
+                    else
+                        return $operatorValue = $value;
                 }
-                
-                if ( $dash )
-                    return $operatorValue = '"' . $value . '"';
-                else
-                    return $operatorValue = $value;
                 break;
             
             case 'oneline':
