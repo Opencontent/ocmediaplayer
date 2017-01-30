@@ -1,0 +1,41 @@
+
+.player-detail
+{
+	position:absolute;
+	top:30px;
+	left:115px;
+	font-size:0.758em;
+	color:#000;
+	line-height:10px;
+	width:180px;
+	overflow:hidden;
+	height:20px;
+}
+
+.player-detail .title
+{
+	font-weight:bold;
+}
+
+.playlist {
+    margin: 1em auto;
+}
+
+.audioplaylist{
+    width:305px;
+}
+
+.playlist a {    
+    border-bottom: 1px solid #ccc;
+    color: #666;
+    display: block;
+    font-size: 0.95em;
+    padding: 0.3em 30px 0.3em 0.3em;
+    text-decoration: none;
+}
+
+.playlist a:hover,
+.playlist a.playing {
+    background: url("../images/controls/audio/now.png") no-repeat center right; 
+    color: #000;
+}

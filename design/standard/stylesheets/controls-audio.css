@@ -1,0 +1,116 @@
+div.controls {
+	position:relative;
+	height:110px;	
+	/* black background with a gradient */
+	background:url(../images/controls/audio/player.png) no-repeat 0 0;
+	width:305px;
+	margin:1em auto;
+}
+
+/* play/pause button */
+div.controls  a.play, div.controls  a.pause { 
+	position:absolute;
+	width: 37px;
+	height: 43px;
+	display:block;
+	text-indent:-9999em;
+	background:url(../images/controls/audio/player.png) no-repeat 0 -110px;
+	cursor:pointer;
+	top:33px;
+	left:38px;	
+	z-index:10000;
+}
+
+div.controls  a.play:hover {
+	background-position:-37px -110px;	
+}
+
+/* pause state */
+div.controls  a.pause { 
+	background-position:-74px -110px;
+}
+
+div.controls  a.pause:hover {
+	background-position:-111px -110px;	
+}
+
+/* the timeline (or "scrubber")  */
+div.controls  div.track {  
+	left:121px;
+	position:absolute;
+	cursor:pointer;
+	width:176px;
+	height:40px;
+	top:58px;
+}
+
+/* the draggable playhead */
+div.controls  div.playhead {
+	position:absolute;
+	cursor:pointer; 
+	background-color:#333;
+	opacity:0.3;
+	filter: alpha(opacity=30);	
+	width:3px;
+	height:40px;
+	border-right:1px solid #333;
+}
+
+/* buffer- and progress bars. upon runtime the width of these elements grows */
+div.controls  div.progress, div.controls  div.buffer {	
+	position:absolute;
+	background-color:#333;
+	filter: alpha(opacity=50);
+	opacity:0.5;
+	width:0px;
+	height:40px;
+}
+
+div.controls  div.buffer {
+	background-color:#fff;
+	opacity:0.3;
+	filter: alpha(opacity=30);
+}
+
+/* time display */
+div.controls  div.time {
+	font-size:12px;
+	left:165px;
+	padding:0;
+	position:absolute;
+	text-align:center;
+	top:10px;
+    color:#999;
+}
+
+/* total duration in time display */
+div.controls  div.time strong {
+	color:#666;
+}
+
+/* mute / unmute buttons */
+div.controls  a.mute, div.controls  a.unmute {
+	background:url("../images/controls/audio/player.png") no-repeat 0 -153px;
+	cursor:pointer;
+	height:19px;
+	left:115px;
+	padding:0;
+	position:absolute;
+	text-align:center;
+	text-indent:-9999em;
+	top:10px;
+	width:24px;
+}
+
+div.controls  a.mute:hover {
+	background-position:-24px -153px;	
+}
+
+/* unmute state */
+div.controls  a.unmute {
+	background-position:-48px -153px;	
+}
+
+div.controls  a.unmute:hover {
+	background-position:-72px -153px;	
+}
